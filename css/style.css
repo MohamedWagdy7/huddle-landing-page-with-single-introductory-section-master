@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: url(../media/bg-desktop.svg) no-repeat hsl(257, 40%, 49%);
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-left: 3em;
+    padding-top: 1em;
+}
+header img{
+    transform: scale(.8);
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+main div{
+    width: calc(94%/2);
+}
+
+.right{
+    padding-top: 2em;
+    padding-left: 3em;
+    line-height: 1.5;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+.right p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+.right a{
+    text-decoration: none;
+}
+.right a{
+    color: hsl(257, 40%, 49%);
+}
+.a{
+    padding-top: .6em;
+    width: 35%;
+    background-color: white;
+    margin-top: 1em;
+    text-align: center;
+    height: 3em;
+    border-radius: 25px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    transition: .5s;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer div{
+    color: white;
+    margin-right: 1em;
+   
+}
+.footer div a{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: .5em;
+    transition: .5s;
+}
+.footer div a:visited{
+    color: white;
+}
+.a:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+}
+.footer div a:hover{
+    border: 2px solid hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+@media (width: 375px) {
+    body{
+        width: 375px;
+    }
+    .header{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .left{
+        width: 80%;
+    }
+    .right {
+        width: 100%;
+    }
+    .left img{
+        width: 100%;
+    }
+    .footer{
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 1em;
+    margin-left: 9em;
+}
+    .a{
+        width: 100%;
+    }
+}
